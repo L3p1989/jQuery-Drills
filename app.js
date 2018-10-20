@@ -1,5 +1,5 @@
 $('#btnSubmit').on('click', function() {
-    var value = $(this).val();
-    $('input'['type = text']).alert(value);
+    $('input[type="text"]').val(function( i, val ) {
+        alert(val);
+    });
 });//this sends out an alert when #btnSubmit is clicked
-
