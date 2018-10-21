@@ -1,4 +1,6 @@
-$('#btnSubmit').after('<div></div>')
+$('#btnSubmit').after('<div></div>');
+
+$('form').after('<ul></ul>');
 
 $('#btnSubmit').attr('disabled', true);
 
@@ -11,11 +13,6 @@ $('input[type="text"]').keyup(function () {
 $('#btnSubmit').click(function(e) {
     e.preventDefault();
     $('input[type="text"]').val(function(i, val) {
-        $('div').append('<h2></h2>');
-        $('h2').append(val)
-        $('h2').hover(function() {
-            $(this).css('background-color', 'blue');
-            $(this).css('border-radius', '10px');
-        });
+        $('ul').append('<li>' + val + '</li>');
     });
 });//this sends out an alert when #btnSubmit is clicked
