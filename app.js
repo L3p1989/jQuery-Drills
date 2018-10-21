@@ -9,3 +9,5 @@ $('#btnSubmit').on('click', function() {
         alert(val);
     });
 });//this sends out an alert when #btnSubmit is clicked
+
+$('#btnSubmit').after('<div></div>')
