@@ -13,5 +13,9 @@ $('#btnSubmit').click(function(e) {
     $('input[type="text"]').val(function(i, val) {
         $('div').append('<h2></h2>');
         $('h2').append(val)
+        $('h2').hover(function() {
+            $(this).css('background-color', 'blue');
+            $(this).css('border-radius', '10px');
+        });
     });
 });//this sends out an alert when #btnSubmit is clicked
