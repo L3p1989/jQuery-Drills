@@ -14,5 +14,8 @@ $('#btnSubmit').click(function(e) {
     e.preventDefault();
     $('input[type="text"]').val(function(i, val) {
         $('ul').append('<li>' + val + '</li>');
+        $('li').click(function() {
+            
+        })
     });
 });//this sends out an alert when #btnSubmit is clicked
